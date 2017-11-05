@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prism:PrismApplication xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
+  x:Class="PrismProject.App">
+	<prism:PrismApplication.Resources>
+		<!-- Application resource dictionary -->
+    <ResourceDictionary>
+      <Color x:Key="NavigationBarBackgroundColor">Blue</Color>
+      <Color x:Key="NavigationBarTextColor">White</Color>
+      <Style TargetType="NavigationPage">
+        <Setter Property="BarBackgroundColor" Value="{DynamicResource NavigationBarBackgroundColor}" />
+        <Setter Property="BarTextColor" Value="{DynamicResource NavigationBarTextColor}" />
+      </Style>
+    </ResourceDictionary>
+	</prism:PrismApplication.Resources>
+</prism:PrismApplication>
